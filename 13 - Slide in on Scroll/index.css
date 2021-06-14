@@ -1,0 +1,96 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Hind');
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  background: #fff;
+  font-family: 'Hind', sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.5em;
+  font-weight: 200;
+}
+
+h1 {
+  font-size: 1.5rem;
+  line-height: 1.5em;
+  
+}
+
+p {
+  margin: 30px;
+}
+button {
+  postion: center;
+  
+}
+#header {
+  position: relative;
+  height: 100vh;
+  background: #f5f5f5;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-wrap {
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.row {
+  padding: 20px 0;
+}
+
+.column {
+  color: #f45549;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 100%;
+}
+
+.column img {
+  width: 100%; 
+  height: auto; 
+}
+
+.slide-in {
+  opacity: 0;
+  transition: all .5s;
+}
+
+.align-left.slide-in {
+  transform:translateX(-30%) scale(0.95);
+}
+
+.align-right.slide-in {
+  transform:translateX(30%) scale(0.95);
+}
+
+.slide-in.active {
+  opacity: 1;
+  transform:translateX(0%) scale(1);
+}
+
+@media screen and (min-width: 800px) {
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .column {
+    flex: 1;
+  }
+
+  .reverse {
+    flex-direction: row-reverse;
+  }
+}
+
